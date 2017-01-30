@@ -22,7 +22,12 @@
         <activity android:name=".D_Our_team" />
         <activity android:name=".E_We_Hire" />
         <activity android:name=".F_Contact_us" />
-        <activity android:name=".G_C_Baybee"></activity>
+        <activity android:name=".H_C_Baybee" />
+        <activity android:name=".G_H_Mart" />
+        <activity android:name=".I_Wheels_On_Rent" />
+        <activity android:name=".J_Emergency"
+            android:theme="@style/EmergencyTheme"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@
     android:id="@+id/activity_g__c__baybee"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.aditya.needyfe.G_C_Baybee">
+    tools:context="com.example.aditya.needyfe.H_C_Baybee">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/whiteColor"
+            android:inputType="textEmailAddress"
             android:hint="UserName"
             android:id="@+id/g_c_baybee_username_ET"
             android:padding="12dp"

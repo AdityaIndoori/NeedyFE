@@ -2,4 +2,10 @@
     <string name="app_name">NeedyFE</string>
     <string name="CategoriesActionbar">NEEDY</string>
     <string name="categoriesString">HOME</string>
+    <string name="H_MartActionBar">H-MART</string>
+    <string name="C_BaybeeActionBar">C-BayBee</string>
+    <string name="Wheels_On_RentActionBar">Wheels On Rent</string>
+    <string name="Emergency_ActionBar">Emergency</string>
+    <string name="EmergencyTitle">E M E R G E N C Y</string>
+    <string name="Urgent_Description">Urgent Message sends only the Phone Number and Location to Emergency Services</string>
 </resources>

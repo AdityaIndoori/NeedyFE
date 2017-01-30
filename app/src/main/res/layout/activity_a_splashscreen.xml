@@ -8,17 +8,42 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/splash_screen_IV"
+        android:src="@drawable/screen_bg"
         android:scaleType="centerCrop"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparency">
 
-    <TextView
-        android:text="Swipe Up to Continue"
-        android:textSize="28sp"
-        android:textColor="#000000"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="12dp"
-        android:id="@+id/textView" />
+        <TextView
+            android:text="Swipe Up to Continue"
+            android:textSize="28sp"
+            android:textColor="@color/whiteColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/textView" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/splash_screen_IV"
+            android:scaleType="centerInside"
+            android:src="@drawable/needy_splash_screen"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_above="@id/splash_screen_IV"
+            android:text="NEEDY"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="56sp"
+            android:fontFamily="serif-monospace"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
 </RelativeLayout>

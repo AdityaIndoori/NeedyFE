@@ -8,41 +8,41 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
-public class G_C_Baybee extends AppCompatActivity implements View.OnClickListener {
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-    Button submitBtn;
-    EditText username_ET,password_ET;
-    String username=null,password=null;
+public class J_Emergency extends AppCompatActivity implements AdapterView.OnItemClickListener {
+    ArrayAdapter<String> adapter;
+    String[] stringArray = {
+            "Please Help, I've been kidnapped",
+            "I am suffocating, ambulance required urgently",
+            "I am lost, please help me find way",
+            "Battery almost out, immediate attention required",
+            "Accident has occurred, please come to rescue"
+    };
+    ListView listView;
+    EditText emergencyETV;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_g__c__baybee);
-        submitBtn=(Button)findViewById(R.id.g_c_baybee_submit_btn);
-        username_ET=(EditText)findViewById(R.id.g_c_baybee_username_ET);
-        password_ET=(EditText)findViewById(R.id.g_c_baybee_password_ET);
-        submitBtn.setOnClickListener(this);
+        setContentView(R.layout.activity_j__emergency);ActionBar actionBar = getSupportActionBar(); // or getActionBar();
+        actionBar.setTitle(getString(R.string.Emergency_ActionBar));
+        listView = (ListView)findViewById(R.id.emergencyListView);
+        emergencyETV=(EditText)findViewById(R.id.emergencyETV);
 
-        ActionBar actionBar = getSupportActionBar(); // or getActionBar();
-        actionBar.setTitle(getString(R.string.CategoriesActionbar));
-    }
-
-    @Override
-    public void onClick(View view) {
-        if (view.getId()==R.id.g_c_baybee_submit_btn){
-            username=username_ET.getText().toString();
-            password=password_ET.getText().toString();
-            if (username.length()<1){
-                Toast.makeText(getApplicationContext(),"Enter a valid ID",Toast.LENGTH_LONG).show();
-            }
-            if (password.length()<1){
-                Toast.makeText(getApplicationContext(),"Invalid password",Toast.LENGTH_LONG).show();
-
-            }
-        }
+        List<String> listArray = new ArrayList<>(Arrays.asList(stringArray));
+        adapter = new ArrayAdapter<String>(getApplicationContext(),R.layout.emrgency_templates,R.id.emergencyTemplateTV,listArray);
+        listView.setAdapter(adapter);
+        listView.setOnItemClickListener(this);
     }
 
     @Override
@@ -102,5 +102,11 @@ public class G_C_Baybee extends AppCompatActivity implements View.OnClickListene
                 Toast.makeText(this,"Already in the screen",Toast.LENGTH_LONG).show();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        String string = listView.getItemAtPosition(i).toString();
+        emergencyETV.setText(string, TextView.BufferType.EDITABLE);
     }
 }

@@ -8,4 +8,9 @@
     <color name="darkTransparency">#c5448a96</color>
     <color name="whiteColor">#ffffff</color>
     <color name="ListTV">#8466b4ca</color>
+    <color name="emergencyTitle">#BF360C</color>
+    <color name="emergencyTitleBG">#e1bee7</color>
+    <color name="emergencyListViewBG">#b0bf360c</color>
+    <color name="emergencyBG">#adf8bbd0</color>
+
 </resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_i__wheels__on__rent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aditya.needyfe.I_Wheels_On_Rent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen_bg"
+        android:scaleType="centerCrop"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparency"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <!--DO SOmething-->
+    </RelativeLayout>
+</RelativeLayout>
