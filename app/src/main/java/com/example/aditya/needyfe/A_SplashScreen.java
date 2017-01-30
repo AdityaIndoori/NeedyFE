@@ -8,6 +8,9 @@ import android.view.MotionEvent;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 import static android.R.attr.left;
 import static android.R.attr.right;
 import static com.example.aditya.needyfe.R.id.screen;

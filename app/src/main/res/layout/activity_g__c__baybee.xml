@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_g__c__baybee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aditya.needyfe.G_C_Baybee">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/screen_bg"
+        android:scaleType="centerCrop"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparency"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteColor"
+            android:hint="UserName"
+            android:id="@+id/g_c_baybee_username_ET"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_below="@id/g_c_baybee_username_ET"
+            android:id="@+id/g_c_baybee_password_ET"
+            android:padding="12dp"
+            android:layout_margin="12dp"
+            android:hint="Password"
+            android:background="@color/whiteColor"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="48sp"
+
+            android:text="C-BayBee"
+            android:fontFamily="serif-monospace"
+            android:textStyle="normal|bold"
+            android:layout_marginTop="63dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="SUBMIT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/g_c_baybee_password_ET"
+            android:id="@+id/g_c_baybee_submit_btn" />
+    </RelativeLayout>
+</RelativeLayout>

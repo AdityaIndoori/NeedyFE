@@ -17,7 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".B_Categories"></activity>
+        <activity android:name=".B_Categories" />
+        <activity android:name=".C_About_us" />
+        <activity android:name=".D_Our_team" />
+        <activity android:name=".E_We_Hire" />
+        <activity android:name=".F_Contact_us" />
+        <activity android:name=".G_C_Baybee"></activity>
     </application>
 
 </manifest>
