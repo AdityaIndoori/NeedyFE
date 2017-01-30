@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2C8FC9</color>
+    <color name="colorPrimaryDark">@color/colorPrimary</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparency">#8b2c8fc9</color>
+    <color name="transparencyLV">#7c72ec77</color>
+    <color name="darkTransparency">#c5448a96</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="ListTV">#8466b4ca</color>
+</resources>

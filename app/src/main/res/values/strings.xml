@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NeedyFE</string>
+    <string name="CategoriesActionbar">NEEDY</string>
+    <string name="categoriesString">Categories</string>
+</resources>
