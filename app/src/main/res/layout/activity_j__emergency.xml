@@ -90,7 +90,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/emergencyListView"
-            android:layout_below="@id/emergencyTitle_TV"
             android:layout_above="@id/urgentMessageBtn"
             android:layout_margin="12dp"
             android:background="@color/emergencyListViewBG"></ListView>
