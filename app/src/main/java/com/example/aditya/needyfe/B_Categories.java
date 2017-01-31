@@ -36,7 +36,7 @@ public class B_Categories extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_b__categories);
 
         ActionBar actionBar = getSupportActionBar(); // or getActionBar();
-        actionBar.setTitle(getString(R.string.CategoriesActionbar));
+        actionBar.setTitle(getString(R.string.CategoriesActionbar));//
         categoriesListView=(ListView)findViewById(R.id.categoriesListView);
 
         CustomList adapter = new CustomList(this,stringArray,imageId);
